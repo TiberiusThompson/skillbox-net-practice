@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --special-color: #3F2AFF;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1111px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.section {
+    margin: 79px 0;
+}
+
+.section__heading {
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #2E2B44;
+    max-width: 380px;
+    margin-bottom: 16px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+/* HEADER */
+
+.header {
+    background: var(--special-color);
+}
+
+.header-container {
+    max-width: 1111px;
+    width: 100%;
+    height: 80px;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header__logo {
+    width: 94px;
+    height: 21px;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav__item {
+    margin-right: 57px;
+}
+
+.header-nav__item:last-child {
+    margin: 0;
+}
+
+.header-nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.header-nav__link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: 0.1s width ease-in-out;
+}
+
+.header-nav__link:hover::before {
+    width: 100%;
+}
+
+/* SELECT */
+
+.select-container {
+    display: flex;
+}
+
+.section-select {
+    background: radial-gradient(
+    44.07% 44.07% at 67.78% 55.93%, 
+    #555681 0%,
+    #212133 100%);
+    margin-bottom: 70px;
+}
+
+.select__img {
+    margin: 15px auto 8px 18px;
+}
+
+.select-content {
+    padding-top: 130px;
+    max-width: 459px;
+    max-height: 500px;
+}
+
+.select__heading {
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.select__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+    margin-bottom: 86px;
+}
+
+.select__btn {
+    padding: 24px 76px;
+    background: var(--special-color);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 117%;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s filter ease-in-out;
+}
+
+.select__btn:hover {
+    filter: drop-shadow(0 0 5px #3F2AFF);
+}
+
+/* BENEFITS */
+
+.benefits-content {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.benefits-picture {
+    margin-top: 23px;
+}
+
+.benefits__img {
+    width: 160px;
+    height: 142px;
+}
+
+.benefits-info {
+    margin-left: 30px;
+}
+
+.benefits__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    max-width: 585px;
+}
+
+.benefits-card {
+    display: flex;
+    align-items: center;
+}
+
+.benefits-column {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.benefits-card__img {
+    width: 80px;
+    height: 80px;
+}
+
+.benefits-card__text {
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #666666;
+}
+
+/* TEACHERS */
+
+.section-teachers {
+    background: #212133;
+    padding: 75px 0;
+}
+
+.teachers__heading {
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.teachers__img {
+    border-radius: 22px 22px 0px 0px;
+    margin-bottom: 23px;
+}
+
+.teachers-card__heading {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.teachers-card__text {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #85859B;
+}
+
+/* COURSES */
+
+.courses-card {
+    background: #EDF0F9;
+    border-radius: 20px;
+}
+
+.courses__img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.courses-content {
+    padding: 30px 0 0 30px;
+    margin-bottom: 30px;
+    min-height: 300px ;
+}
+
+.courses__heading {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    color: #212133;
+    margin-bottom: 6px;
+}
+
+.cources__text {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #666666;
+    max-width: 480px;
+    margin-bottom: 70px;
+}
+
+.cources__btn {
+    font-size: 16px;
+    line-height: 112.5%;
+    font-weight: 700;
+    color: #fff;
+    background: var(--special-color);
+    border-radius: 20px;
+    padding: 20px 59px;
+    text-decoration: none;
+    transition: 0.2s filter ease-in-out;
+}
+
+.cources__btn:hover {
+   filter: drop-shadow(0 0 4px #3F2AFF);  
+}
+
+/* FOOTER */
+
+.footer-icons {
+    background: #2E2B44;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons-container {
+    max-width: 186px;
+    margin: 0 auto;
+}
+
+.footer__icon {
+    color: #fff;
+    transition: 0.2s color ease-in-out;
+}
+
+.footer__icon:hover {
+    color: var(--special-color);
+    filter: drop-shadow(0 0 1px #3F2AFF);
+}
+
+.footer__icon+.footer__icon:hover {
+    color: var(--special-color);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background: #E5E5E5;
+    height: 1em;
+}
+
+.copyright__text {
+    font-size: 13px;
+    line-height: 15px;
+    color: #2E2B44;
+}
+
+.copyright__special-symbol {
+    color: var(--special-color);
+}
+
+@media (max-width: 768px) {
+ 
+    .main-container {
+        max-width: 690px;
+    }
+
+    .header-container {
+        max-width: 690px;
+    }
+
+    .select-container {
+        max-height: 620px;
+    }
+
+    .select-content {
+        max-width: 340px;
+    }
+
+    .select__img {
+        margin: 118px 0 152px 20px;
+    }
+
+    .select-content::after {
+        width: 312px;
+        height: 342px;
+    }
+
+    .select__heading {
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+
+    .benefits__img {
+        width: 211px;
+        height: 187px;
+    }
+
+    .benefits-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits-card__img {
+        margin-bottom: 10px;
+    }
+
+    .benefits-card__text {
+        margin: 0;
+    }
+
+    .teachers__heading {
+        margin-bottom: 22px;
+    }
+
+    .teachers__img {
+        margin-bottom: 27px;
+    }
+
+    .teachers-card:nth-child(1),
+    .teachers-card:nth-child(2) {
+        margin-bottom: 22px;
+    }
+
+    .teachers-card:nth-child(2),
+    .teachers-card:nth-child(4) {
+        padding-left: 15px;
+    }
+
+}
