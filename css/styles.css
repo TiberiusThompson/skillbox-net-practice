@@ -267,9 +267,12 @@ h3 {
 }
 
 .courses-content {
-    padding: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    padding: 30px;
     margin-bottom: 30px;
-    min-height: 300px ;
+    height: 300px ;
 }
 
 .courses__heading {
@@ -280,17 +283,18 @@ h3 {
     margin-bottom: 6px;
 }
 
-.cources__text {
+.courses__text {
     margin-bottom: 49px;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
     color: #666666;
     max-width: 480px;
-    height: 96px;
 }
 
-.cources__btn {
+.courses__btn {
+    margin-top: auto;
+    justify-self: flex-end !important;
     max-width: 195px;
     font-size: 16px;
     line-height: 112.5%;
@@ -304,7 +308,7 @@ h3 {
     display: inline;
 }
 
-.cources__btn:hover {
+.courses__btn:hover {
    filter: drop-shadow(0 0 4px #3F2AFF);  
 }
 
@@ -447,19 +451,73 @@ h3 {
     }
 
     .courses-content {
-        padding: 33px 0 30px 30px;
-        min-height: 377px;
+        height: 377px;
     }
 
-    .cources__text {
-        height: 196px;
-        margin-bottom: 46px;
+    .courses__text {
+        margin-bottom: 34px;
     }
 
-    .cources__btn {
+    .courses__btn {
         max-width: 180px;
         margin-top: auto;
         padding: 20px 48px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .header-container {
+        max-width: 470px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 95px 0 ;
+    }
+
+    .header__logo {
+        margin-bottom: 31px;
+    }
+
+    .header-nav {
+        margin: 0;
+    }
+
+    .header-nav__item {
+        margin-right: 56px;
+    }
+
+    .main-container {
+        padding: 0 33px;
+    }
+
+    .select-container {
+        justify-content: normal;
+    }
+
+    .select-content {
+        
+    }
+
+    .select__img {
+        display: none;
+    }
+
+    .benefits__img {
+        width: 150px;
+        height: 134px;
+    }
+
+    .teachers__img {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .courses-content {
+        height: 473px;
+    }
+
+    .courses__text {
+
     }
 
 }
