@@ -17,6 +17,7 @@ h3 {
 }
 
 .main-container {
+    max-width: 1440px;
     width: 100%;
     position: relative;
     padding: 0 165px;
@@ -53,6 +54,7 @@ h3 {
 }
 
 .header-container {
+    position: relative;
     max-width: 1111px;
     width: 100%;
     height: 80px;
@@ -64,6 +66,19 @@ h3 {
 .header__logo {
     width: 94px;
     height: 21px;
+}
+
+.header-menu__button {
+    display: none;
+    width: 20px;
+    height: 17px;
+    background: transparent;
+    border: none;
+}
+
+.border-menu__button:hover {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 
 .header-nav {
@@ -112,7 +127,7 @@ h3 {
 .select-container {
     height: 700px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .section-select {
@@ -233,7 +248,8 @@ h3 {
 }
 
 .teachers__img {
-    border-radius: 22px 22px 0px 0px;
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
     margin-bottom: 23px;
 }
 
@@ -355,6 +371,22 @@ h3 {
 
 .copyright__special-symbol {
     color: var(--special-color);
+}
+
+@media (min-width: 1930px) {
+
+    .main-container {
+        max-width: 1111px;
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+    .teachers__img {
+        border-radius: 20px 20px 0px 0px;
+    }
+
 }
 
 @media (max-width: 1240px) {
@@ -522,10 +554,112 @@ h3 {
 
 }
 
-@media (min-width: 1930px) {
+@media (max-width: 320px) {
 
     .main-container {
-        max-width: 1111px;
+        padding: 0 15px !important;
     }
+
+    .section {
+        margin: 50px 0;
+    }
+
+    .section__heading {
+        font-size: 20px;
+    }
+
+    .header-container {
+        max-width: 290px;
+        flex-direction: row;
+        padding: 30px 0;
+    }
+
+    .header__logo {
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .header-menu__button {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .section-select {
+        height: 433px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+        background: radial-gradient(
+            49% 49% at 67.78% 84.57%,
+            #555681 0%,
+            #2E2B44 100%);
+    }
+
+    .select-container {
+        padding: 0;
+    }
+
+    .select-content {
+        margin: 50px 0;
+    }
+
+    .select__heading {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .select__text {
+        font-size: 16px;
+    }
+
+    .select__btn {
+        padding: 20px 53px;
+        font-size: 16px;
+    }
+
+    .benefits__img {
+        display: none;
+    }
+
+    .benefits-content {
+        /* margin-left: -10px; */
+    }
+
+    .benefits-info {
+        margin: 0;
+    }
+
+    .benefits-card {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .benefits-card__img {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    .section-teachers {
+        padding: 50px 0;
+    }
+
+    .teachers__heading {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .teachers-card {
+        margin-bottom: 30px;
+    }
+
+    .teachers-card:nth-child(4) {
+        margin: 0;
+    }
+
+    .courses-card:nth-child(4) {
+        margin: 0;
+    }   
 
 }
